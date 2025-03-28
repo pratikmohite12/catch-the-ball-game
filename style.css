@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87CEEB;
+}
+
+.game-container {
+    margin-top: 20px;
+}
+
+#game-area {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: white;
+    margin: 0 auto;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#basket {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: left 0.2s ease-in-out;
+}
+
+#ball {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: top 0.05s linear;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.fruit {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.bomb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
